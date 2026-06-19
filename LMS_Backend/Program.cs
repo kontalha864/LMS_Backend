@@ -32,4 +32,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.MapGet("/", () =>
+{
+    return Results.Ok("API is working");
+});
+
 app.Run();
