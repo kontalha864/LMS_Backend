@@ -23,7 +23,7 @@ namespace LMS_Backend.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("getRole")]
         public async Task<IActionResult> getRole()
         {
             var roles = await db.Roles.ToListAsync();
