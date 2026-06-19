@@ -1,0 +1,6 @@
+COMMAND:
+
+dotnet ef dbcontext scaffold "Host=ep-nameless-shape-aorp0n6d.c-2.ap-southeast-1.aws.neon.tech;Database=neondb;Username=neondb_owner;Password=npg_DX4bjgt1mOSA;SSL Mode=Require;Trust Server Certificate=true" Npgsql.EntityFrameworkCore.PostgreSQL -c AppDbContext -o Models --no-onconfiguring -f
+
+
+postgresql://neondb_owner:npg_DX4bjgt1mOSA@ep-nameless-shape-aorp0n6d-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
